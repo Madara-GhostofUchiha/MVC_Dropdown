@@ -19,6 +19,7 @@ namespace MVC_Dropdown.Models
         [Required(ErrorMessage = "Phone number is required")]
         [RegularExpression(@"^\d{10}$", ErrorMessage = "Invalid phone number")]
         public string PhoneNumber { get; set; }
+        [Required(ErrorMessage ="choose any course")]
         public string Course { get; set; }
     }
 }
